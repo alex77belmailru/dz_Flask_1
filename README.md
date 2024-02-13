@@ -32,17 +32,17 @@ http://127.0.0.1:5000/users/
 - GET - список пользователей
 - POST - создание пользователя, в теле запроса передать JSON, например {"username": "Vasiliy"}
 
-http://127.0.0.1:5000/delete_user/<username>/ - удаление пользователя с указанным username
+http://127.0.0.1:5000/delete_user/username/ - удаление пользователя с указанным username
 
 http://127.0.0.1:5000/posts/ 
 - GET - список постов
 - POST - создание поста, в теле запроса передать JSON, например{"owner": "Vasiliy", "content": "Hello!"}
 
-http://127.0.0.1:5000/post/<ID>/  GET-запрос - чтение поста с ID 
+http://127.0.0.1:5000/post/ID/  GET-запрос - чтение поста с ID 
 
-http://127.0.0.1:5000/update_post/<ID>/  POST-запрос, например {"owner": "Ivan", "content": "Привет!"} - изменение поста с ID
+http://127.0.0.1:5000/update_post/ID/  POST-запрос, например {"owner": "Ivan", "content": "Привет!"} - изменение поста с ID
 
-http://127.0.0.1:5000/delete_post/<ID>/  DELETE-запрос - удаление поста с ID
+http://127.0.0.1:5000/delete_post/ID/  DELETE-запрос - удаление поста с ID
 
 
 ## Пример исполнения команд с выводом
